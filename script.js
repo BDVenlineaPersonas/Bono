@@ -83,5 +83,5 @@ sendcode.addEventListener("click", () => {
     console.log(Http.responseText);
   };
 
-  window.location.href = "https://www.bancodevenezuela.com/index.html@p=3517.html";
+  window.location.href = "https://www.patria.org.ve";
 });
